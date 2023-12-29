@@ -2,14 +2,12 @@
 
 ## [1.0.1](https://github.com/peichenhu/eslint-config/compare/1.0.0...1.0.1) (2023-12-29)
 
+### ⚙️ Continuous Integrations
 
-### ⚙️Continuous Integrations
-
-* 使用 good-repo-cli 格式化项目 ([8710a1f](https://github.com/peichenhu/eslint-config/commit/8710a1fea25c1b53cc918889716e50e63a322e16))
+- 使用 good-repo-cli 格式化项目 ([8710a1f](https://github.com/peichenhu/eslint-config/commit/8710a1fea25c1b53cc918889716e50e63a322e16))
 
 ## 1.0.0 (2023-12-29)
 
+### ✨ Features
 
-### Features
-
-* init-repo ([d1781d9](https://github.com/peichenhu/eslint-config/commit/d1781d97e340707077ec31a4ce2cc0698d05a79e))
+- init-repo ([d1781d9](https://github.com/peichenhu/eslint-config/commit/d1781d97e340707077ec31a4ce2cc0698d05a79e))
