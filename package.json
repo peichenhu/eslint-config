@@ -1,57 +1,60 @@
 {
-    "name": "@pch1024/eslint-config",
-    "version": "0.0.1",
-    "description": "一个 eslint 共享配置",
-    "author": "pch1024",
-    "license": "MIT",
-    "exports": {
-        ".": {
-            "import": "./dist/ts-vue.eslintrc.mjs",
-            "require": "./dist/ts-vue.eslintrc.cjs"
-        },
-        "./react": {
-            "import": "./dist/ts-react.eslintrc.mjs",
-            "require": "./dist/ts-react.eslintrc.cjs"
-        },
-        "./vue": {
-            "import": "./dist/ts-vue.eslintrc.mjs",
-            "require": "./dist/ts-vue.eslintrc.cjs"
-        }
+  "name": "@pch1024/eslint-config",
+  "version": "0.0.1",
+  "description": "一个 eslint 共享配置",
+  "author": "pch1024",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/ts-vue.eslintrc.mjs",
+      "require": "./dist/ts-vue.eslintrc.cjs"
     },
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "build": "rollup -c",
-        "lint": "lint-staged",
-        "prepare": "husky install",
-        "commit": "git commit",
-        "release": "HUSKY=0 release-it"
+    "./react": {
+      "import": "./dist/ts-react.eslintrc.mjs",
+      "require": "./dist/ts-react.eslintrc.cjs"
     },
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org/",
-        "access": "public"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^18.4.3",
-        "@commitlint/config-conventional": "^18.4.3",
-        "@commitlint/cz-commitlint": "^18.4.3",
-        "@release-it/conventional-changelog": "^8.0.1",
-        "@rollup/plugin-typescript": "^11.1.5",
-        "commitizen": "^4.3.0",
-        "husky": "^8.0.3",
-        "inquirer": "^8.2.6",
-        "lint-staged": "^15.2.0",
-        "prettier": "^3.1.1",
-        "release-it": "^17.0.1",
-        "rollup": "^4.8.0",
-        "vue-eslint-parser": "^9.3.2"
-    },
-    "peerDependencies": {
-        "eslint": "^8.56.0",
-        "eslint-config-prettier": "9.0.0",
-        "eslint-plugin-prettier": "5.0.1",
-        "@typescript-eslint/eslint-plugin": "^6.16.0",
-        "@typescript-eslint/parser": "^6.16.0"
+    "./vue": {
+      "import": "./dist/ts-vue.eslintrc.mjs",
+      "require": "./dist/ts-vue.eslintrc.cjs"
     }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "lint-staged",
+    "prepare": "husky install",
+    "commit": "git commit",
+    "release": "HUSKY=0 release-it"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@commitlint/cz-commitlint": "^18.4.3",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "commitizen": "^4.3.0",
+    "eslint": "^8.56.0",
+    "husky": "^8.0.3",
+    "inquirer": "^8.2.6",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "release-it": "^17.0.1",
+    "rollup": "^4.8.0",
+    "vue-eslint-parser": "^9.3.2"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-prettier": "5.0.1"
+  }
 }
